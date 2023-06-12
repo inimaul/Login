@@ -138,6 +138,7 @@
             textBox3.ForeColor = Color.FromArgb(64, 64, 64);
             textBox3.Location = new Point(762, 681);
             textBox3.Name = "textBox3";
+            textBox3.PasswordChar = '*';
             textBox3.Size = new Size(376, 29);
             textBox3.TabIndex = 28;
             textBox3.Click += textBox3_Click;
@@ -166,6 +167,7 @@
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
             textBox2.Location = new Point(762, 616);
             textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
             textBox2.Size = new Size(376, 29);
             textBox2.TabIndex = 26;
             textBox2.Click += textBox2_Click;

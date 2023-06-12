@@ -1,0 +1,27 @@
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.exe
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.deps.json
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.runtimeconfig.json
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.pdb
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Guna.UI2.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\System.Management.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.AssemblyReference.cache
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Forgot_Password_1.resources
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form1.resources
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Properties.Resources.resources
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Sign_Up.resources
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.GenerateResource.cache
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.GeneratedMSBuildEditorConfig.editorconfig
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.AssemblyInfoInputs.cache
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.AssemblyInfo.cs
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.CoreCompileInputs.cache
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.CopyComplete
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\refint\FIX LOGIN REGISTER.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.pdb
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.genruntimeconfig.cache
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\ref\FIX LOGIN REGISTER.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Npgsql.dll

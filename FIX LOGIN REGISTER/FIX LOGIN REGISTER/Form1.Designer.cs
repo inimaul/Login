@@ -65,6 +65,7 @@
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
             textBox2.Location = new Point(1204, 460);
             textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
             textBox2.Size = new Size(469, 29);
             textBox2.TabIndex = 1;
             textBox2.Click += textBox2_Click;
@@ -77,7 +78,7 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gray;
-            label1.Location = new Point(1204, 373);
+            label1.Location = new Point(1204, 371);
             label1.Name = "label1";
             label1.Size = new Size(139, 33);
             label1.TabIndex = 2;
@@ -137,6 +138,7 @@
             linkLabel2.TabIndex = 8;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Sign Up";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked_1;
             linkLabel2.Click += linkLabel2_Click;
             // 
             // guna2GradientTileButton1
