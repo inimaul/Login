@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_Up));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -73,9 +73,9 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(1198, 345);
+            textBox1.Location = new Point(1201, 343);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 29);
+            textBox1.Size = new Size(239, 29);
             textBox1.TabIndex = 0;
             textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
@@ -88,9 +88,9 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(1488, 345);
+            textBox2.Location = new Point(1491, 343);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(243, 29);
+            textBox2.Size = new Size(234, 29);
             textBox2.TabIndex = 1;
             textBox2.Click += textBox2_Click;
             textBox2.TextChanged += textBox2_TextChanged;
@@ -103,7 +103,7 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox3.Location = new Point(1200, 429);
+            textBox3.Location = new Point(1203, 429);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(531, 29);
             textBox3.TabIndex = 2;
@@ -118,7 +118,7 @@
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox4.Location = new Point(1200, 514);
+            textBox4.Location = new Point(1203, 514);
             textBox4.Name = "textBox4";
             textBox4.PasswordChar = '*';
             textBox4.Size = new Size(531, 29);
@@ -134,7 +134,7 @@
             textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox5.Location = new Point(1200, 600);
+            textBox5.Location = new Point(1203, 600);
             textBox5.Name = "textBox5";
             textBox5.PasswordChar = '*';
             textBox5.Size = new Size(522, 29);
@@ -148,6 +148,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.White;
+            label1.Cursor = Cursors.IBeam;
             label1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gray;
             label1.Location = new Point(1200, 341);
@@ -162,6 +163,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.White;
+            label2.Cursor = Cursors.IBeam;
             label2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gray;
             label2.Location = new Point(1490, 341);
@@ -176,6 +178,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
+            label3.Cursor = Cursors.IBeam;
             label3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gray;
             label3.Location = new Point(1200, 428);
@@ -190,6 +193,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.BackColor = Color.White;
+            label4.Cursor = Cursors.IBeam;
             label4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gray;
             label4.Location = new Point(1200, 513);
@@ -204,6 +208,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.BackColor = Color.White;
+            label5.Cursor = Cursors.IBeam;
             label5.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gray;
             label5.Location = new Point(1200, 599);
@@ -299,7 +304,7 @@
             // 
             guna2GradientTileButton1.Anchor = AnchorStyles.None;
             guna2GradientTileButton1.BorderRadius = 14;
-            guna2GradientTileButton1.CustomizableEdges = customizableEdges7;
+            guna2GradientTileButton1.CustomizableEdges = customizableEdges1;
             guna2GradientTileButton1.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientTileButton1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientTileButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -311,7 +316,7 @@
             guna2GradientTileButton1.ForeColor = Color.White;
             guna2GradientTileButton1.Location = new Point(1190, 870);
             guna2GradientTileButton1.Name = "guna2GradientTileButton1";
-            guna2GradientTileButton1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2GradientTileButton1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2GradientTileButton1.Size = new Size(543, 58);
             guna2GradientTileButton1.TabIndex = 20;
             guna2GradientTileButton1.Text = "Sign Up";
@@ -428,6 +433,7 @@
             label15.Anchor = AnchorStyles.None;
             label15.AutoSize = true;
             label15.BackColor = Color.White;
+            label15.Cursor = Cursors.IBeam;
             label15.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = Color.Gray;
             label15.Location = new Point(1200, 686);
@@ -465,7 +471,7 @@
             textBox6.BorderStyle = BorderStyle.None;
             textBox6.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox6.Location = new Point(1200, 687);
+            textBox6.Location = new Point(1203, 687);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(522, 29);
             textBox6.TabIndex = 33;
@@ -477,6 +483,7 @@
             label17.Anchor = AnchorStyles.None;
             label17.AutoSize = true;
             label17.BackColor = Color.White;
+            label17.Cursor = Cursors.IBeam;
             label17.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label17.ForeColor = Color.Gray;
             label17.Location = new Point(1200, 269);
@@ -493,7 +500,7 @@
             textBox7.BorderStyle = BorderStyle.None;
             textBox7.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox7.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox7.Location = new Point(1200, 272);
+            textBox7.Location = new Point(1200, 270);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(522, 29);
             textBox7.TabIndex = 34;

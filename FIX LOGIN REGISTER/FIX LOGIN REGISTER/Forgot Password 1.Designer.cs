@@ -50,6 +50,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.White;
+            label1.Cursor = Cursors.IBeam;
             label1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gray;
             label1.Location = new Point(762, 476);
@@ -66,7 +67,7 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(762, 475);
+            textBox1.Location = new Point(773, 475);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(396, 29);
             textBox1.TabIndex = 6;
@@ -120,6 +121,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
+            label3.Cursor = Cursors.IBeam;
             label3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gray;
             label3.Location = new Point(762, 682);
@@ -136,7 +138,7 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox3.Location = new Point(762, 681);
+            textBox3.Location = new Point(773, 681);
             textBox3.Name = "textBox3";
             textBox3.PasswordChar = '*';
             textBox3.Size = new Size(376, 29);
@@ -149,6 +151,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.White;
+            label2.Cursor = Cursors.IBeam;
             label2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gray;
             label2.Location = new Point(762, 616);
@@ -165,7 +168,7 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(762, 616);
+            textBox2.Location = new Point(773, 616);
             textBox2.Name = "textBox2";
             textBox2.PasswordChar = '*';
             textBox2.Size = new Size(376, 29);
@@ -179,6 +182,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.BackColor = Color.White;
+            label4.Cursor = Cursors.IBeam;
             label4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gray;
             label4.Location = new Point(762, 411);
@@ -195,7 +199,7 @@
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox4.Location = new Point(762, 411);
+            textBox4.Location = new Point(773, 410);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(376, 29);
             textBox4.TabIndex = 24;
@@ -222,6 +226,7 @@
             Controls.Add(textBox1);
             Name = "Forgot_Password_1";
             Text = "Forgot_Password_1";
+            Load += Forgot_Password_1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

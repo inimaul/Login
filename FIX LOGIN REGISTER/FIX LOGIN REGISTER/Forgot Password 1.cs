@@ -75,7 +75,7 @@ namespace FIX_LOGIN_REGISTER
             }
             try
             {
-                NpgsqlConnection conn = new NpgsqlConnection("Server=localhost;Port=5432;Database=jecation;User Id=postgres;Password=Yus2064.;");
+                NpgsqlConnection conn = new NpgsqlConnection("Server=localhost;Port=5432;Database=jecation;User Id=postgres;Password=Vario.125;");
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
@@ -85,7 +85,7 @@ namespace FIX_LOGIN_REGISTER
                 cmd.Parameters.Add(new NpgsqlParameter("@namaibu", textBox1.Text));
                 string tgl_lahir_ibu = dateTimePicker1.Value.ToString("dd-MM-yyyy");
                 cmd.Parameters.Add(new NpgsqlParameter("@hbdibu", NpgsqlTypes.NpgsqlDbType.Date));
-                cmd.Parameters["@hbdibu"].Value = DateTime.Parse(tgl_lahir_ibu); 
+                cmd.Parameters["@hbdibu"].Value = DateTime.Parse(tgl_lahir_ibu);
                 cmd.Parameters.Add(new NpgsqlParameter("@password", password));
 
                 int eksekusi = cmd.ExecuteNonQuery();
@@ -223,6 +223,11 @@ namespace FIX_LOGIN_REGISTER
                 textBox3.Focus();
                 label3.Visible = false;
             }
+        }
+
+        private void Forgot_Password_1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

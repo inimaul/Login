@@ -18,7 +18,7 @@ namespace FIX_LOGIN_REGISTER
     {
 
         private NpgsqlConnection connection;
-        private string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=Yus2064.; Database=jecation;";
+        private string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=Vario.125; Database=jecation;";
 
         public Sign_Up()
         {
