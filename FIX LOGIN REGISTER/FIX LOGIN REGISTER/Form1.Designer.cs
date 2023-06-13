@@ -41,17 +41,20 @@
             guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             label13 = new Label();
             label4 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(1204, 372);
+            textBox1.Location = new Point(1204, 373);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(469, 29);
+            textBox1.Size = new Size(469, 36);
             textBox1.TabIndex = 0;
             textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
@@ -60,13 +63,12 @@
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.None;
-            textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(1204, 458);
+            textBox2.Location = new Point(1204, 459);
             textBox2.Name = "textBox2";
             textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(469, 29);
+            textBox2.Size = new Size(469, 36);
             textBox2.TabIndex = 1;
             textBox2.Click += textBox2_Click;
             textBox2.TextChanged += textBox2_TextChanged;
@@ -76,10 +78,9 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.White;
-            label1.Cursor = Cursors.IBeam;
             label1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gray;
-            label1.Location = new Point(1204, 371);
+            label1.Location = new Point(1202, 374);
             label1.Name = "label1";
             label1.Size = new Size(139, 33);
             label1.TabIndex = 2;
@@ -91,10 +92,9 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Cursor = Cursors.IBeam;
             label2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gray;
-            label2.Location = new Point(1204, 459);
+            label2.Location = new Point(1202, 460);
             label2.Name = "label2";
             label2.Size = new Size(132, 33);
             label2.TabIndex = 3;
@@ -104,7 +104,6 @@
             // linkLabel1
             // 
             linkLabel1.ActiveLinkColor = Color.DodgerBlue;
-            linkLabel1.Anchor = AnchorStyles.None;
             linkLabel1.AutoSize = true;
             linkLabel1.BackColor = Color.White;
             linkLabel1.Font = new Font("Montserrat", 8F, FontStyle.Bold, GraphicsUnit.Point);
@@ -120,7 +119,6 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
             label3.Font = new Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point);
@@ -133,7 +131,6 @@
             // linkLabel2
             // 
             linkLabel2.ActiveLinkColor = Color.DodgerBlue;
-            linkLabel2.Anchor = AnchorStyles.None;
             linkLabel2.AutoSize = true;
             linkLabel2.Font = new Font("Montserrat SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             linkLabel2.LinkColor = Color.Black;
@@ -148,7 +145,6 @@
             // 
             // guna2GradientTileButton1
             // 
-            guna2GradientTileButton1.Anchor = AnchorStyles.None;
             guna2GradientTileButton1.BorderRadius = 14;
             guna2GradientTileButton1.CustomizableEdges = customizableEdges1;
             guna2GradientTileButton1.DisabledState.BorderColor = Color.DarkGray;
@@ -170,7 +166,6 @@
             // 
             // label13
             // 
-            label13.Anchor = AnchorStyles.None;
             label13.AutoSize = true;
             label13.BackColor = Color.White;
             label13.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -185,7 +180,6 @@
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.BackColor = Color.White;
             label4.Font = new Font("Montserrat", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -198,6 +192,30 @@
             label4.Text = "Please Enter Password";
             label4.Visible = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.BackColor = Color.White;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1691, 379);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(27, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 27;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.None;
+            pictureBox2.BackColor = Color.White;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1694, 467);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(21, 27);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 28;
+            pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -205,6 +223,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(label13);
             Controls.Add(guna2GradientTileButton1);
@@ -220,6 +240,8 @@
             Text = "Form1";
             Load += Form1_Load;
             Resize += Form1_Resize;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -236,5 +258,7 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
         private Label label13;
         private Label label4;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

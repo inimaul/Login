@@ -25,6 +25,40 @@ E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\ob
 E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\ref\FIX LOGIN REGISTER.dll
 E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 E:\kuliah\SEM 2\PBO\File Codingan\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Npgsql.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.exe
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.deps.json
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.runtimeconfig.json
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.pdb
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Guna.UI2.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Npgsql.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\System.Management.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.AssemblyReference.cache
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Forgot_Password_1.resources
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form1.resources
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Properties.Resources.resources
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Sign_Up.resources
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.GenerateResource.cache
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.GeneratedMSBuildEditorConfig.editorconfig
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.AssemblyInfoInputs.cache
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.AssemblyInfo.cs
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.CoreCompileInputs.cache
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.CopyComplete
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\refint\FIX LOGIN REGISTER.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.pdb
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.genruntimeconfig.cache
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\ref\FIX LOGIN REGISTER.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form2.resources
+E:\pbo\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form3.resources
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.exe
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.deps.json
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\FIX LOGIN REGISTER.runtimeconfig.json
@@ -33,12 +67,19 @@ D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-wind
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Guna.Charts.WinForms.dll
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Guna.UI2.dll
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\Npgsql.dll
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\System.Management.dll
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.AssemblyReference.cache
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Forgot_Password_1.resources
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form1.resources
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form2.resources
+D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Form3.resources
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Properties.Resources.resources
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX_LOGIN_REGISTER.Sign_Up.resources
 D:\Project PBO\Login\FIX LOGIN REGISTER\FIX LOGIN REGISTER\obj\Debug\net6.0-windows\FIX LOGIN REGISTER.csproj.GenerateResource.cache

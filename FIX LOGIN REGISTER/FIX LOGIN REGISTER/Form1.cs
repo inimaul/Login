@@ -14,44 +14,119 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
 using Npgsql;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Guna.Charts;
 
 namespace FIX_LOGIN_REGISTER
 {
     public partial class Form1 : Form
     {
         private Size formOriginalSize;
-        private Rectangle recBut1;
-        private Rectangle recTxt1;
-        private Rectangle recPnl1;
-        //private Rectangle recRdo1;
-        private Rectangle reclbl1;
-        private Rectangle reclbl2;
-        private Rectangle recTxt2;
-        private Rectangle reclbl13;
-        private Rectangle reclbl3;
-        private Rectangle reclbl4;
-        private Rectangle reclink1;
-        private Rectangle reclink2;
+        private Rectangle rectb1;
+        private Rectangle rectb2;
+        private Rectangle reclb1;
+        private Rectangle reclb2;
+        private Rectangle reclb3;
+        private Rectangle reclb4;
+        private Rectangle reclb13;
+        private Rectangle reclinklbl1;
+        private Rectangle reclinklbl2;
+        private Rectangle recgb1;
+        private Rectangle recpb1;
+        private Rectangle recpb2;
 
         public Form1()
         {
             InitializeComponent();
             this.Resize += Form1_Resize;
             formOriginalSize = this.Size;
-            recBut1 = new Rectangle(guna2GradientTileButton1.Location, guna2GradientTileButton1.Size);
-            recTxt1 = new Rectangle(textBox1.Location, textBox1.Size);
-            recTxt2 = new Rectangle(textBox2.Location, textBox2.Size);
-            reclbl1 = new Rectangle(label1.Location, label1.Size);
-            reclbl2 = new Rectangle(label2.Location, label2.Size);
-            reclbl13 = new Rectangle(label13.Location, label13.Size);
-            reclbl4 = new Rectangle(label4.Location, label4.Size);
-            reclbl3 = new Rectangle(label3.Location, label3.Size);
-            reclink1 = new Rectangle(linkLabel1.Location, linkLabel1.Size);
-            reclink2 = new Rectangle(linkLabel2.Location, linkLabel2.Size);
+            rectb1 = new Rectangle(textBox1.Location, textBox1.Size);
+            rectb2 = new Rectangle(textBox2.Location, textBox2.Size);
+            reclb1 = new Rectangle(label1.Location, label1.Size);
+            reclb2 = new Rectangle(label2.Location, label2.Size);
+            reclb3 = new Rectangle(label3.Location, label3.Size);
+            reclb4 = new Rectangle(label4.Location, label4.Size);
+            reclb13 = new Rectangle(label13.Location, label13.Size);
+            reclinklbl1 = new Rectangle(linkLabel1.Location, linkLabel1.Size);
+            reclinklbl2 = new Rectangle(linkLabel2.Location, linkLabel2.Size);
+            recgb1 = new Rectangle(guna2GradientTileButton1.Location, guna2GradientTileButton1.Size);
+            recpb1 = new Rectangle(pictureBox1.Location, pictureBox1.Size);
+            recpb2 = new Rectangle(pictureBox2.Location, pictureBox2.Size);
+        }
 
-            //recRdo1 = new Rectangle(radioButton1.Location, textBox1.Size);
-            textBox1.Multiline = true;
+        public class User
+        {
+            public int id_user { get; set; }
+            public string username { get; set; }
+            public string role { get; set; }
+
+        }
+
+        private static RSA GenerateRsaKey(int keySizeInBits)
+        {
+            var rsa = RSA.Create();
+            rsa.KeySize = keySizeInBits;
+            return rsa;
+        }
+
+        public class TokenManager
+        {
+            private const string SecretKey = "mysecretkey";
+
+            public static string GenerateToken(User user)
+            {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var rsaKey = GenerateRsaKey(2048);
+
+                var rsaParameters = rsaKey.ExportParameters(includePrivateParameters: false);
+                var rsaSecurityKey = new RsaSecurityKey(rsaParameters);
+
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new Claim[]
+                    {
+                new Claim(ClaimTypes.NameIdentifier, user.id_user.ToString()),
+                new Claim(ClaimTypes.Name, user.username),
+                new Claim(ClaimTypes.Role, user.role)
+                    }),
+                    Expires = DateTime.UtcNow.AddDays(1),
+                    SigningCredentials = new SigningCredentials(new RsaSecurityKey(rsaKey), SecurityAlgorithms.RsaSha256)
+                };
+
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                return tokenHandler.WriteToken(token);
+            }
+
+            public static User ValidateToken(string token)
+            {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var rsaKey = GenerateRsaKey(2048);
+
+                try
+                {
+                    tokenHandler.ValidateToken(token, new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new RsaSecurityKey(rsaKey),
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ClockSkew = TimeSpan.Zero
+                    }, out SecurityToken validatedToken);
+
+                    var jwtToken = (JwtSecurityToken)validatedToken;
+                    var userId = int.Parse(jwtToken.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value);
+                    var username = jwtToken.Claims.First(x => x.Type == ClaimTypes.Name).Value;
+                    var role = jwtToken.Claims.First(x => x.Type == ClaimTypes.Role).Value;
+
+                    return new User { id_user = userId, username = username, role = role };
+                }
+                catch (Exception)
+                {
+                    return null;
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,12 +136,14 @@ namespace FIX_LOGIN_REGISTER
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Height = 32;
+            //textBox1.Height = 32;
+            //textBox1.AutoSize = false;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox2.Height = 32;
+            //    textBox2.Height = 32;
+            //    textBox2.AutoSize = false;
         }
 
         private void textBox1_Click(object sender, EventArgs e)
@@ -124,54 +201,120 @@ namespace FIX_LOGIN_REGISTER
             forgotpw1.Show();
             this.Hide();
         }
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Sign_Up daftar = new Sign_Up();
+            daftar.Show();
+            this.Hide();
+        }
 
         public void guna2GradientTileButton1_Click(object sender, EventArgs e)
         {
 
-            try
+
+            using (NpgsqlConnection connection = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=;Database=jecation"))
             {
-                string username_akun = textBox1.Text;
+
+                string username = textBox1.Text;
                 string password = textBox2.Text;
                 string password_akun = GetSHA256Hash(password);
-                bool data = AuthenticateData(username_akun, password_akun);
-                bool name = AuthenticateUser(username_akun);
+                bool data = AuthenticateData(username, password_akun);
+                bool name = AuthenticateUser(username);
                 bool pass = AuthenticatePass(password_akun);
 
                 if (data)
                 {
-                    MessageBox.Show("Login Succesfull");
+                    connection.Open();
+                    string query = "select * from akun where username_akun = @username and password_akun = @password";
+                    using (var command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Username", username);
+                        command.Parameters.AddWithValue("@Password", password_akun);
 
+                        using (var reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Jika login berhasil, buat objek User dan token
+                                User user = new User
+                                {
+                                    id_user = (int)reader["id_akun"],
+                                    username = (string)reader["username_akun"],
+                                    role = (string)reader["role"]
+                                };
+
+                                string token = TokenManager.GenerateToken(user);
+
+                                // Simpan token di session atau tempat penyimpanan yang sesuai
+                                MessageBox.Show("Login successfull");
+                                if (user.role == "admin")
+                                {
+                                    // Tampilkan form admin
+                                    Form3 adminForm = new Form3(user);
+                                    adminForm.Show();
+                                }
+                                else if (user.role == "user")
+                                {
+                                    // Tampilkan form user
+                                    Form2 userForm = new Form2(user);
+                                    userForm.Show();
+                                }
+                                this.Hide();
+                            }
+                            else
+                            {
+                                // Jika login gagal, tampilkan pesan kesalahan
+                                MessageBox.Show("Username atau password salah.");
+                            }
+                        }
+                    }
                 }
                 else
                 {
-                    if (username_akun == "" || password == "")
+                    if (username == "" || password == "")
                     {
-                        label13.Show();
-                        MessageBox.Show("Fill Usernsme or password");
+                        if (username == " " && password == "")
+                        {
+                            label13.Show();
+                            label4.Show();
+                            MessageBox.Show("Fill Usernsme and password");
+                            return;
+                        }
+                        else if (username == "")
+                        {
+                            label13.Show();
+                            MessageBox.Show("Fill Usernsme");
+                            return;
+                        }
+                        else
+                        {
+                            label4.Show();
+                            MessageBox.Show("Fill Password");
+                            return;
+                        }
+
+                    }
+                    else if (!name && !pass)
+                    {
+                        MessageBox.Show("Login Failed, Username and Password is wrong");
+                        return;
                     }
                     else if (!name)
                     {
                         MessageBox.Show("Login Failed, Username is wrong");
+                        return;
+
                     }
-                    else if (!pass)
+                    else
                     {
                         MessageBox.Show("Login Failed, Password is wrong");
-
-                    }
-                }
-
-                static string GetSHA256Hash(string input)
-                {
-                    using (SHA256 sha256 = SHA256.Create())
-                    {
-                        byte[] bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(input));
-                        return BitConverter.ToString(bytes).Replace("-", "").ToLower();
+                        return;
                     }
                 }
 
                 static bool AuthenticateData(string username_akun, string password_akun)
                 {
-                    string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=Vario.125; Database=jecation;";
+                    string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=; Database=jecation;";
                     using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                     {
                         connection.Open();
@@ -190,7 +333,7 @@ namespace FIX_LOGIN_REGISTER
 
                 static bool AuthenticateUser(string username_akun)
                 {
-                    string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=Vario.125; Database=jecation;";
+                    string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=; Database=jecation;";
                     using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                     {
                         connection.Open();
@@ -208,7 +351,7 @@ namespace FIX_LOGIN_REGISTER
 
                 static bool AuthenticatePass(string password_akun)
                 {
-                    string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=Vario.125; Database=jecation;";
+                    string connectionString = "Server=localhost; Port =5432; user id=postgres; Password=; Database=jecation;";
                     using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                     {
                         connection.Open();
@@ -223,33 +366,35 @@ namespace FIX_LOGIN_REGISTER
 
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occured: " + ex.Message);
-            }
-        }
+                static string GetSHA256Hash(string input)
+                {
+                    using (SHA256 sha256 = SHA256.Create())
+                    {
+                        byte[] bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(input));
+                        return BitConverter.ToString(bytes).Replace("-", "").ToLower();
+                    }
 
-        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Sign_Up daftar = new Sign_Up();
-            daftar.Show();
-            this.Hide();
+
+                }
+
+            }
+
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            resize_Control(guna2GradientTileButton1, recBut1);
-            resize_Control(textBox1, recTxt1);
-            resize_Control(textBox2, recTxt2);
-            resize_Control(label1, reclbl1);
-            resize_Control(label2, reclbl2);
-            resize_Control(label13, reclbl13);
-            resize_Control(label3, reclbl3);
-            resize_Control(linkLabel1, reclink1);
-            resize_Control(linkLabel2, reclink2);
-
-
+            resize_Control(textBox1, rectb1);
+            resize_Control(textBox2, rectb2);
+            resize_Control(label1, reclb1);
+            resize_Control(label2, reclb2);
+            resize_Control(label3, reclb3);
+            resize_Control(label4, reclb4);
+            resize_Control(label13, reclb13);
+            resize_Control(linkLabel1, reclinklbl1);
+            resize_Control(linkLabel2, reclinklbl2);
+            resize_Control(guna2GradientTileButton1, recgb1);
+            resize_Control(pictureBox1, recpb1);
+            resize_Control(pictureBox2, recpb2);
         }
         private void resize_Control(Control c, Rectangle r)
         {
@@ -265,18 +410,9 @@ namespace FIX_LOGIN_REGISTER
             c.Size = new Size(newWidth, newHeight);
 
         }
-
-        private void Form1_SizeChanged(object sender, EventArgs e)
-        {
-            float fontSize2 = (float)(Width + Height) / 170; // Sesuaikan rumus ini sesuai kebutuhan Anda
-
-            float fontSize = (float)(Width + Height) / 100; // Sesuaikan rumus ini sesuai kebutuhan Anda
-
-            // Atur ukuran font pada kontrol yang diinginkan
-            label1.Font = new Font(label1.Font.FontFamily, fontSize2, label1.Font.Style);
-            textBox1.Font = new Font(textBox1.Font.FontFamily, fontSize2, textBox1.Font.Style);
-
-            guna2GradientTileButton1.Font = new Font(guna2GradientTileButton1.Font.FontFamily, fontSize, guna2GradientTileButton1.Font.Style);
-        }
     }
 }
+
+
+
+

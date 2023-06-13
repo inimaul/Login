@@ -70,12 +70,11 @@
             // 
             textBox1.Anchor = AnchorStyles.None;
             textBox1.BackColor = Color.White;
-            textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(1201, 343);
+            textBox1.Location = new Point(1198, 345);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(239, 29);
+            textBox1.Size = new Size(240, 36);
             textBox1.TabIndex = 0;
             textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
@@ -85,12 +84,11 @@
             // 
             textBox2.Anchor = AnchorStyles.None;
             textBox2.BackColor = Color.White;
-            textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(1491, 343);
+            textBox2.Location = new Point(1488, 345);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(234, 29);
+            textBox2.Size = new Size(243, 36);
             textBox2.TabIndex = 1;
             textBox2.Click += textBox2_Click;
             textBox2.TextChanged += textBox2_TextChanged;
@@ -100,12 +98,11 @@
             // 
             textBox3.Anchor = AnchorStyles.None;
             textBox3.BackColor = Color.White;
-            textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox3.Location = new Point(1203, 429);
+            textBox3.Location = new Point(1200, 429);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(531, 29);
+            textBox3.Size = new Size(531, 36);
             textBox3.TabIndex = 2;
             textBox3.Click += textBox3_Click;
             textBox3.TextChanged += textBox3_TextChanged;
@@ -115,13 +112,12 @@
             // 
             textBox4.Anchor = AnchorStyles.None;
             textBox4.BackColor = Color.White;
-            textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox4.Location = new Point(1203, 514);
+            textBox4.Location = new Point(1200, 514);
             textBox4.Name = "textBox4";
             textBox4.PasswordChar = '*';
-            textBox4.Size = new Size(531, 29);
+            textBox4.Size = new Size(531, 36);
             textBox4.TabIndex = 3;
             textBox4.Click += textBox4_Click;
             textBox4.TextChanged += textBox4_TextChanged;
@@ -131,13 +127,12 @@
             // 
             textBox5.Anchor = AnchorStyles.None;
             textBox5.BackColor = Color.White;
-            textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox5.Location = new Point(1203, 600);
+            textBox5.Location = new Point(1200, 600);
             textBox5.Name = "textBox5";
             textBox5.PasswordChar = '*';
-            textBox5.Size = new Size(522, 29);
+            textBox5.Size = new Size(522, 36);
             textBox5.TabIndex = 4;
             textBox5.Click += textBox5_Click;
             textBox5.TextChanged += textBox5_TextChanged;
@@ -148,10 +143,9 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.White;
-            label1.Cursor = Cursors.IBeam;
             label1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gray;
-            label1.Location = new Point(1200, 341);
+            label1.Location = new Point(1198, 344);
             label1.Name = "label1";
             label1.Size = new Size(163, 33);
             label1.TabIndex = 5;
@@ -163,10 +157,9 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Cursor = Cursors.IBeam;
             label2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gray;
-            label2.Location = new Point(1490, 341);
+            label2.Location = new Point(1488, 344);
             label2.Name = "label2";
             label2.Size = new Size(144, 33);
             label2.TabIndex = 6;
@@ -178,10 +171,9 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
-            label3.Cursor = Cursors.IBeam;
             label3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gray;
-            label3.Location = new Point(1200, 428);
+            label3.Location = new Point(1200, 430);
             label3.Name = "label3";
             label3.Size = new Size(139, 33);
             label3.TabIndex = 7;
@@ -193,10 +185,9 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.BackColor = Color.White;
-            label4.Cursor = Cursors.IBeam;
             label4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gray;
-            label4.Location = new Point(1200, 513);
+            label4.Location = new Point(1200, 515);
             label4.Name = "label4";
             label4.Size = new Size(132, 33);
             label4.TabIndex = 8;
@@ -208,10 +199,9 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.BackColor = Color.White;
-            label5.Cursor = Cursors.IBeam;
             label5.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gray;
-            label5.Location = new Point(1200, 599);
+            label5.Location = new Point(1200, 601);
             label5.Name = "label5";
             label5.Size = new Size(235, 33);
             label5.TabIndex = 9;
@@ -433,10 +423,9 @@
             label15.Anchor = AnchorStyles.None;
             label15.AutoSize = true;
             label15.BackColor = Color.White;
-            label15.Cursor = Cursors.IBeam;
             label15.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = Color.Gray;
-            label15.Location = new Point(1200, 686);
+            label15.Location = new Point(1200, 688);
             label15.Name = "label15";
             label15.Size = new Size(312, 33);
             label15.TabIndex = 29;
@@ -468,12 +457,11 @@
             // 
             textBox6.Anchor = AnchorStyles.None;
             textBox6.BackColor = Color.White;
-            textBox6.BorderStyle = BorderStyle.None;
             textBox6.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox6.Location = new Point(1203, 687);
+            textBox6.Location = new Point(1200, 687);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(522, 29);
+            textBox6.Size = new Size(522, 36);
             textBox6.TabIndex = 33;
             textBox6.Click += textBox6_Click;
             textBox6.TextChanged += textBox6_TextChanged;
@@ -483,10 +471,9 @@
             label17.Anchor = AnchorStyles.None;
             label17.AutoSize = true;
             label17.BackColor = Color.White;
-            label17.Cursor = Cursors.IBeam;
             label17.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label17.ForeColor = Color.Gray;
-            label17.Location = new Point(1200, 269);
+            label17.Location = new Point(1198, 271);
             label17.Name = "label17";
             label17.Size = new Size(59, 33);
             label17.TabIndex = 35;
@@ -497,12 +484,11 @@
             // 
             textBox7.Anchor = AnchorStyles.None;
             textBox7.BackColor = Color.White;
-            textBox7.BorderStyle = BorderStyle.None;
             textBox7.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox7.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox7.Location = new Point(1200, 270);
+            textBox7.Location = new Point(1200, 272);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(522, 29);
+            textBox7.Size = new Size(533, 36);
             textBox7.TabIndex = 34;
             textBox7.Click += textBox7_Click;
             textBox7.TextChanged += textBox7_TextChanged;
@@ -567,6 +553,7 @@
             Name = "Sign_Up";
             Text = "Sign_Up";
             Load += Sign_Up_Load;
+            Resize += Sign_Up_Resize;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

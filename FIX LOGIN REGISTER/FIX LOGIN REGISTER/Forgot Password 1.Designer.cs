@@ -47,35 +47,34 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.BackColor = Color.White;
-            label1.Cursor = Cursors.IBeam;
-            label1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gray;
-            label1.Location = new Point(762, 476);
+            label1.Location = new Point(758, 480);
             label1.Name = "label1";
-            label1.Size = new Size(329, 33);
+            label1.Size = new Size(276, 27);
             label1.TabIndex = 7;
             label1.Text = "Enter your mother's name";
             label1.Click += label1_Click;
             // 
             // textBox1
             // 
-            textBox1.Anchor = AnchorStyles.None;
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox1.BackColor = Color.White;
-            textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(773, 475);
+            textBox1.Location = new Point(755, 476);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(396, 29);
+            textBox1.Size = new Size(376, 36);
             textBox1.TabIndex = 6;
             textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(11, 12);
@@ -88,6 +87,7 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dateTimePicker1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.Location = new Point(755, 544);
@@ -97,6 +97,7 @@
             // 
             // guna2GradientTileButton1
             // 
+            guna2GradientTileButton1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             guna2GradientTileButton1.BorderRadius = 14;
             guna2GradientTileButton1.CustomizableEdges = customizableEdges1;
             guna2GradientTileButton1.DisabledState.BorderColor = Color.DarkGray;
@@ -118,60 +119,56 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.None;
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
-            label3.Cursor = Cursors.IBeam;
-            label3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gray;
-            label3.Location = new Point(762, 682);
+            label3.Location = new Point(758, 683);
             label3.Name = "label3";
-            label3.Size = new Size(235, 33);
+            label3.Size = new Size(198, 27);
             label3.TabIndex = 29;
             label3.Text = "Confirm Password";
             label3.Click += label3_Click;
             // 
             // textBox3
             // 
-            textBox3.Anchor = AnchorStyles.None;
+            textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox3.BackColor = Color.White;
-            textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox3.Location = new Point(773, 681);
+            textBox3.Location = new Point(755, 677);
             textBox3.Name = "textBox3";
             textBox3.PasswordChar = '*';
-            textBox3.Size = new Size(376, 29);
+            textBox3.Size = new Size(376, 36);
             textBox3.TabIndex = 28;
             textBox3.Click += textBox3_Click;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.None;
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Cursor = Cursors.IBeam;
-            label2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gray;
-            label2.Location = new Point(762, 616);
+            label2.Location = new Point(758, 622);
             label2.Name = "label2";
-            label2.Size = new Size(193, 33);
+            label2.Size = new Size(162, 27);
             label2.TabIndex = 27;
             label2.Text = "New Password";
             label2.Click += label2_Click;
             // 
             // textBox2
             // 
-            textBox2.Anchor = AnchorStyles.None;
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox2.BackColor = Color.White;
-            textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(773, 616);
+            textBox2.Location = new Point(755, 618);
             textBox2.Name = "textBox2";
             textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(376, 29);
+            textBox2.Size = new Size(376, 36);
             textBox2.TabIndex = 26;
             textBox2.Click += textBox2_Click;
             textBox2.TextChanged += textBox2_TextChanged;
@@ -179,29 +176,27 @@
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.None;
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.BackColor = Color.White;
-            label4.Cursor = Cursors.IBeam;
-            label4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Montserrat", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gray;
-            label4.Location = new Point(762, 411);
+            label4.Location = new Point(758, 415);
             label4.Name = "label4";
-            label4.Size = new Size(139, 33);
+            label4.Size = new Size(117, 27);
             label4.TabIndex = 25;
             label4.Text = "Username";
             label4.Click += label4_Click;
             // 
             // textBox4
             // 
-            textBox4.Anchor = AnchorStyles.None;
+            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox4.BackColor = Color.White;
-            textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox4.Location = new Point(773, 410);
+            textBox4.Location = new Point(755, 411);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(376, 29);
+            textBox4.Size = new Size(376, 36);
             textBox4.TabIndex = 24;
             textBox4.Click += textBox4_Click;
             textBox4.TextChanged += textBox4_TextChanged;
@@ -212,6 +207,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
             Controls.Add(label3);
             Controls.Add(textBox3);
@@ -224,9 +220,10 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(textBox1);
+            DoubleBuffered = true;
             Name = "Forgot_Password_1";
             Text = "Forgot_Password_1";
-            Load += Forgot_Password_1_Load;
+            Resize += Forgot_Password_1_Resize;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
