@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_Up));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -46,7 +46,6 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            textBox8 = new TextBox();
             pictureBox1 = new PictureBox();
             guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             label10 = new Label();
@@ -74,9 +73,9 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox1.Location = new Point(1200, 342);
+            textBox1.Location = new Point(1198, 345);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(227, 29);
+            textBox1.Size = new Size(240, 29);
             textBox1.TabIndex = 0;
             textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
@@ -89,9 +88,9 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox2.Location = new Point(1490, 342);
+            textBox2.Location = new Point(1488, 345);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(232, 29);
+            textBox2.Size = new Size(243, 29);
             textBox2.TabIndex = 1;
             textBox2.Click += textBox2_Click;
             textBox2.TextChanged += textBox2_TextChanged;
@@ -104,9 +103,9 @@
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox3.Location = new Point(1200, 428);
+            textBox3.Location = new Point(1200, 429);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(522, 29);
+            textBox3.Size = new Size(531, 29);
             textBox3.TabIndex = 2;
             textBox3.Click += textBox3_Click;
             textBox3.TextChanged += textBox3_TextChanged;
@@ -121,7 +120,8 @@
             textBox4.ForeColor = Color.FromArgb(64, 64, 64);
             textBox4.Location = new Point(1200, 514);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(522, 29);
+            textBox4.PasswordChar = '*';
+            textBox4.Size = new Size(531, 29);
             textBox4.TabIndex = 3;
             textBox4.Click += textBox4_Click;
             textBox4.TextChanged += textBox4_TextChanged;
@@ -136,6 +136,7 @@
             textBox5.ForeColor = Color.FromArgb(64, 64, 64);
             textBox5.Location = new Point(1200, 600);
             textBox5.Name = "textBox5";
+            textBox5.PasswordChar = '*';
             textBox5.Size = new Size(522, 29);
             textBox5.TabIndex = 4;
             textBox5.Click += textBox5_Click;
@@ -246,7 +247,7 @@
             label7.BackColor = Color.White;
             label7.Font = new Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(1200, 797);
+            label7.Location = new Point(1566, 805);
             label7.Name = "label7";
             label7.Size = new Size(108, 24);
             label7.TabIndex = 14;
@@ -260,7 +261,7 @@
             label8.BackColor = Color.White;
             label8.Font = new Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(1398, 798);
+            label8.Location = new Point(1384, 804);
             label8.Name = "label8";
             label8.Size = new Size(90, 24);
             label8.TabIndex = 16;
@@ -274,27 +275,12 @@
             label9.BackColor = Color.White;
             label9.Font = new Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(1591, 798);
+            label9.Location = new Point(1199, 805);
             label9.Name = "label9";
             label9.Size = new Size(78, 24);
             label9.TabIndex = 18;
             label9.Text = "Provinsi";
             label9.Click += label9_Click;
-            // 
-            // textBox8
-            // 
-            textBox8.Anchor = AnchorStyles.None;
-            textBox8.BackColor = Color.White;
-            textBox8.BorderStyle = BorderStyle.None;
-            textBox8.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox8.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox8.Location = new Point(1571, 799);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(155, 29);
-            textBox8.TabIndex = 17;
-            textBox8.Click += textBox8_Click;
-            textBox8.TextChanged += textBox8_TextChanged;
-            textBox8.KeyDown += textBox8_KeyDown;
             // 
             // pictureBox1
             // 
@@ -313,7 +299,7 @@
             // 
             guna2GradientTileButton1.Anchor = AnchorStyles.None;
             guna2GradientTileButton1.BorderRadius = 14;
-            guna2GradientTileButton1.CustomizableEdges = customizableEdges1;
+            guna2GradientTileButton1.CustomizableEdges = customizableEdges7;
             guna2GradientTileButton1.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientTileButton1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientTileButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -325,7 +311,7 @@
             guna2GradientTileButton1.ForeColor = Color.White;
             guna2GradientTileButton1.Location = new Point(1190, 870);
             guna2GradientTileButton1.Name = "guna2GradientTileButton1";
-            guna2GradientTileButton1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2GradientTileButton1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2GradientTileButton1.Size = new Size(543, 58);
             guna2GradientTileButton1.TabIndex = 20;
             guna2GradientTileButton1.Text = "Sign Up";
@@ -410,7 +396,8 @@
             // 
             comboBox1.Anchor = AnchorStyles.None;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(1190, 824);
+            comboBox1.ItemHeight = 20;
+            comboBox1.Location = new Point(1571, 832);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 26;
@@ -420,19 +407,21 @@
             // 
             comboBox2.Anchor = AnchorStyles.None;
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(1389, 825);
+            comboBox2.Location = new Point(1389, 831);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 27;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // comboBox3
             // 
             comboBox3.Anchor = AnchorStyles.None;
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(1582, 824);
+            comboBox3.Location = new Point(1203, 831);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(151, 28);
             comboBox3.TabIndex = 28;
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
             // label15
             // 
@@ -443,15 +432,15 @@
             label15.ForeColor = Color.Gray;
             label15.Location = new Point(1200, 686);
             label15.Name = "label15";
-            label15.Size = new Size(329, 33);
+            label15.Size = new Size(312, 33);
             label15.TabIndex = 29;
-            label15.Text = "Enter your mother's name";
+            label15.Text = "Enter your mother name";
             label15.Click += label15_Click;
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Anchor = AnchorStyles.None;
-            dateTimePicker1.Location = new Point(1190, 767);
+            dateTimePicker1.Location = new Point(1203, 770);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 30;
@@ -463,11 +452,11 @@
             label16.BackColor = Color.White;
             label16.Font = new Font("Montserrat", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label16.ForeColor = Color.Black;
-            label16.Location = new Point(1200, 739);
+            label16.Location = new Point(1199, 739);
             label16.Name = "label16";
-            label16.Size = new Size(230, 24);
+            label16.Size = new Size(223, 24);
             label16.TabIndex = 31;
-            label16.Text = "Enter your mother's name";
+            label16.Text = "Enter your mother's birth";
             // 
             // textBox6
             // 
@@ -504,7 +493,7 @@
             textBox7.BorderStyle = BorderStyle.None;
             textBox7.Font = new Font("Montserrat", 14F, FontStyle.Regular, GraphicsUnit.Point);
             textBox7.ForeColor = Color.FromArgb(64, 64, 64);
-            textBox7.Location = new Point(1200, 269);
+            textBox7.Location = new Point(1200, 272);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(522, 29);
             textBox7.TabIndex = 34;
@@ -552,7 +541,6 @@
             Controls.Add(label10);
             Controls.Add(guna2GradientTileButton1);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox8);
             Controls.Add(label8);
             Controls.Add(linkLabel2);
             Controls.Add(label6);
@@ -594,7 +582,6 @@
         private Label label7;
         private Label label8;
         private Label label9;
-        private TextBox textBox8;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
         private Label label10;
